@@ -17,7 +17,3 @@
     });
     console.log(a)
  }
-
-// $(window).load(function(){
-//         $("#loading").hide();
-//     });

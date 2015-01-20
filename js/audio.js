@@ -5,7 +5,7 @@ var playbox = (function(){
         that.player = null;
         that.src = null;
         that.on = false;
-        //
+        
         that.autoPlayFix = {
             on: true,
             evtName: ("ontouchstart" in window)?"touchend":"click"
