@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* CSS RRESET */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 10px; }
+body { background: #fff; color: #363636; font-size: 140%; overflow: hidden; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, select, option { margin: 0; padding: 0; border: 0; vertical-align: baseline; font-family: "微软雅黑", Arial, Helvetica, sans-serif; -webkit-text-size-adjust:none;  }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+img, iframe, fieldset, button, input { border: none; }
+img { vertical-align:top; }
+ul, ol, li { list-style: none; }
+em, i { font-style: normal; }
+table { border-collapse: collapse; border-spacing: 0; }
+table, th, td { vertical-align: top; }
+input, button { margin: 0; vertical-align: top; }
+button { display : inline-block; overflow: visible; width: auto; outline: none; border: none; background: none; text-align: center; cursor: pointer; }
+button::-moz-focus-inner {
+margin: 0;
+padding: 0;
+border: none;
+}
+a, button, input, div, li { -webkit-tap-highlight-color: rgba(255,0,0,0); }/*去除android链接触摸时产生边框*/
+a { color: #3e3e3e; outline: none;text-decoration: none; }
+
+/*内部元素有浮动外框高度不定内容不被撑开解决方案*/
+.clear { zoom: 1; }
+.clear:after { content: ""; display: block; height: 0; clear: both; visibility: hidden; }
+
+/*定位&大小*/
+.index-box .swiper-slide { position: relative;}
+.index-bg { position: absolute; width: 100%; height: 100%; top: 0; left: 0;z-index: -1;}
+.down-icon{ position: absolute; bottom: 15px; right: 15px;}
+
+.index-101{ position: absolute; height: 70%; top: 15%; left: 22%;}
+.index-102{ position: absolute; height: 15%; bottom: 26%; left: 26%;}
+
+.index-2logo{ display: block; margin: 20px auto; height: 23%;}
+.index-201{ position: absolute; height: 50%; bottom: 0; right: 0; }
+.index-2word{ position: absolute; width: 100%; height: 15%; top: 30%; left: 0;}
+.index-202{ position: absolute; width: 38%; top: 12%; left: 8%;}
+.index-203{ position: absolute; width: 40%; bottom: 10%; right: 10%;}
+
+.index-3word{ position: absolute; width: 40%; height: 50%; top: 10%; left:30%;}
+.index-301{ position: absolute; width: 25%; top: 1%; left: 23%;}
+.index-302{ position: absolute; width: 28%; bottom: 2%; right: 18%; z-index: 1;}
+.index-303{ position: absolute; height: 30%; bottom: 7%; right: 7%;}
+
+.index-4word{ position: absolute; width: 80%; height: 20%; top: 28%; left: 13%;}
+.index-401{ position: absolute; width: 58%; top: 15%; left: 20%;}
+.index-402{ position: absolute; width: 80%;top: 60%; left: 10%;}
+.index-403{ position: absolute; height: 30%; bottom: 11%; right: 0;}
+
+.index-502{ position: absolute; width: 50%; top: 0; left: 6%;}
+.index-5word1{ position: absolute; width: 36%;  height: 40%; top: 20%; left: 30%;}
+.index-503{ position: absolute; width: 28%; top: 0; left: 0%;}
+.index-504{ position: absolute; width: 28%; top: 0; right: 0%;}
+.index-5word2{ position: absolute; width: 50%;  height: 40%; top: 43%; left: 25%;}
+.index-505{ position: absolute; width: 29%; top: 0; left: 6%;}
+.index-506{ position: absolute; width: 32%; top: 0; right: 13%;}
+.index-501{ position: absolute; height:35%; bottom: 2%; left: 22%;}
+
+/*动画*/
+.down-icon{
+    -webkit-animation: up-arrow 2s ease 0 infinite;
+            animation: up-arrow 2s ease 0 infinite;}
+.swiper-slide-visible .index-101{
+    -webkit-animation: fadeIn 1s ease-out 0;
+            animation: fadeIn 1s ease-out 0;}
+.swiper-slide-visible .index-102{
+    -webkit-animation: bounceIn 1s ease-out 0.5s both;
+            animation: bounceIn 1s ease-out 0.5s both;}
+.swiper-slide-visible .index-2logo{
+    -webkit-animation: fadeInDown 1s ease-out 0 both;
+            animation: fadeInDown 1s ease-out 0 both;}
+.swiper-slide-visible .index-201{
+    -webkit-animation: fadeInLeft 1s ease-out 1s both;
+            animation: fadeInLeft 1s ease-out 1s both;}
+.swiper-slide-visible .index-202{
+    -webkit-animation: bounceInLeft 1.7s ease-out 0s both;
+            animation: bounceInLeft 1.7s ease-out 0s both;}
+.swiper-slide-visible .index-203{
+    -webkit-animation: bounceInLeft 2s ease-out 0.7s both;
+            animation: bounceInLeft 2s ease-out 0.7s both;}
+.swiper-slide-visible .index-301{
+    -webkit-animation: bounceInDown 2s ease-out 0s both;
+            animation: bounceInDown 2s ease-out 0s both;}
+.swiper-slide-visible .index-302{
+    -webkit-animation: bounceInUp 2s ease-out 0s both;
+            animation: bounceInUp 2s ease-out 0s both;}
+.swiper-slide-visible .index-303{
+    -webkit-animation: fadeInRight 0.7s ease-out 0.5s both;
+            animation: fadeInRight 0.7s ease-out 0.5s both;}
+.swiper-slide-visible .index-401{
+    -webkit-animation: flipInX 1.5s ease-out 0.5s both;
+            animation: zoomInUp 1.5s ease-out 0.5s both;}
+.swiper-slide-visible .index-402{
+    -webkit-animation: rotateInUpLeft 0.5s ease-out 0.8s both;
+            animation: rotateInUpLeft 0.5s ease-out 0.8s both;}
+.swiper-slide-visible .index-403{
+    -webkit-animation: fadeInUp 0.7s ease-out 0.7s both;
+            animation: fadeInUp 0.7s ease-out 0.7s both;}
+.swiper-slide-visible .index-502{
+    -webkit-animation: fadeInLeft 0.7s ease-out 0 both;
+            animation: fadeInLeft 0.7s ease-out 0 both;}
+.swiper-slide-visible .index-503{
+    -webkit-animation: bounceIn 0.7s ease-out 0 both;
+            animation: bounceIn 0.7s ease-out 0 both;}
+.swiper-slide-visible .index-504{
+    -webkit-animation: bounceIn 0.7s ease-out 0.8s both;
+            animation: bounceIn 0.7s ease-out 0.8s both;}
+.swiper-slide-visible .index-505{
+    -webkit-animation: bounceIn 0.7s ease-out 0.5s both;
+            animation: bounceIn 0.7s ease-out 0.5s both;}
+.swiper-slide-visible .index-506{
+    -webkit-animation: bounceIn 0.7s ease-out 1.3s both;
+            animation: bounceIn 0.7s ease-out 1.3s both;}
+.swiper-slide-visible .index-501{
+    -webkit-animation: bounceIn 1s ease-out 0.5s both;
+            animation: bounceIn 1s ease-out 0.5s both;}
+
+/*自定义动画*/
+@-webkit-keyframes up-arrow {
+    0%   {opacity: 0; -webkit-transform: translateY(10px);}
+    40%  {opacity: 1; -webkit-transform: translateY(4px);}
+    100% {opacity: 0; -webkit-transform: translateY(-4px);}
+}
+@keyframes up-arrow {
+    0%   {opacity: 0; -webkit-transform: translateY(10px); transform: translateY(10px);}
+    40%  {opacity: 1; -webkit-transform: translateY(4px); transform: translateY(4px);}
+    100% {opacity: 0; -webkit-transform: translateY(-4px); transform: translateY(-4px);}
+}
+
+/*音乐*/
+.music { display: inline-block; width: 35px; height: 35px; background: url('') no-repeat center center; background-size: 100% auto; position: absolute; z-index: 1; left: 30px; top: 30px;}
+.music.on { background-image: url("");}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <title>mobile</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+    <div class="swiper-container index-box" style="height: 768px">
+  <div class="swiper-wrapper" style="width: 1366px; height: 3840px  transition: 0s; -webkit-transition: 0s; -webkit-transform: translate3d(0px, 0px, 0px);">
+      <!--第一屏-->
+      <div class="swiper-slide swiper-slide-visible swiper-slide-active"> 
+        <!-- HTML -->
+        <img src="pic/P1_bg.jpg" alt="" class="index-bg">
+        <img src="pic/P1_01.png" alt="" class="index-101">
+        <img src="pic/P1_02.png" alt="" class="index-102">
+        <img src="pic/downWhite.png" alt="" class="down-icon">
+        <!--暂时不写-->
+      </div>
+      
+      <!--第二屏-->
+      <div class="swiper-slide">
+        <!-- HTML -->
+        <img src="pic/P2_bg.jpg" alt="" class="index-bg">
+        <img src="pic/P2_logo.png" alt="" class="index-2logo">
+        <img src="pic/P2_01.png" alt="" class="index-201">
+        <div class="index-2word">
+            <img src="pic/P2_02.png" alt="" class="index-202">
+            <img src="pic/P2_03.png" alt="" class="index-203">
+        </div>
+        <img src="pic/downWhite.png" alt="" class="down-icon">
+      </div>
+      
+      <!--第三屏-->
+      <div class="swiper-slide"> 
+        <!-- HTML -->
+        <img src="pic/P3_bg.jpg" alt="" class="index-bg">
+        <div class="index-3word">
+            <img src="pic/P3_01.png" alt="" class="index-301">
+            <img src="pic/P3_02.png" alt="" class="index-302">
+        </div>
+        <img src="pic/P3_03.png" alt="" class="index-303">
+        <img src="pic/downBlack.png" alt="" class="down-icon">
+      </div>
+      
+      <!--第四屏-->
+      <div class="swiper-slide"> 
+        <!-- HTML -->
+        <img src="pic/P4_bg.jpg" alt="" class="index-bg">
+        <div class="index-4word">
+            <img src="pic/P4_01.png" alt="" class="index-401">
+            <img src="pic/P4_02.png" alt="" class="index-402">
+        </div>
+        <img src="pic/P4_03.png" alt="" class="index-403">
+        <img src="pic/downBlack.png" alt="" class="down-icon">
+      </div>
+      
+      <!--第五屏-->
+      <div class="swiper-slide"> 
+        <!-- HTML -->
+        <img src="pic/P5_bg.jpg" alt="" class="index-bg">
+        <img src="pic/P5_02.png" alt="" class="index-502">
+        <div class="index-5word1">
+            <img src="pic/P5_03.png" alt="" class="index-503">
+            <img src="pic/P5_04.png" alt="" class="index-504">
+        </div>
+
+        <div class="index-5word2">
+            <img src="pic/P5_05.png" alt="" class="index-505">
+            <img src="pic/P5_06.png" alt="" class="index-506">
+        </div>
+        <img src="pic/P5_01.png" alt="" class="index-501">
+      </div>
+
+      <!--结束-->
+  </div>
+</div>
+
+<script src="js/idangerous.swiper-2.0.min.js"></script>
+<script src="js/height.js"></script>
+
+<script>
+        $(function () {
+            $(".index-box").height($(window).height());
+            $(".swiper-slide").height($(window).height());
+        })
+         var mySwiper = new Swiper('.swiper-container', {
+            mode: 'vertical',
+            paginationClickable: true
+        })
+</script>
+
+
+<script src="js/audio.js"></script>
+
+<span id="playbox" class="music" onclick="playbox.init(this).play();">
+	<audio src="audio/bgMusic.mp3" loop="" id="audio" autoplay="true"></audio>
+</span>
+
+
+</body>
+</html>
